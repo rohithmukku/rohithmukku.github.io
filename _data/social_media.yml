@@ -1,0 +1,29 @@
+email:
+  id: rohithmukku@gmail.com
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fas fa-envelope'
+
+facebook:
+  id: rohithmukku
+  href: 'https://www.facebook.com/'
+  title: 'Facebook'
+  fa-icon: 'fab fa-facebook-f'
+
+instagram:
+  id: rohithmukku
+  href: 'https://www.instagram.com/'
+  title: 'Instagram'
+  fa-icon: 'fab fa-instagram'
+
+github:
+  id: rohithmukku
+  href: 'https://github.com/'
+  title: 'Github'
+  fa-icon: 'fab fa-github'
+
+linkedin:
+  id: rohith-mukku
+  href: 'https://www.linkedin.com/in/'
+  title: 'LinkedIn'
+  fa-icon: 'fab fa-linkedin'
