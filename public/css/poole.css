@@ -45,6 +45,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 html {
@@ -259,7 +261,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 0.95rem;
   font-weight: 300;
 }
 

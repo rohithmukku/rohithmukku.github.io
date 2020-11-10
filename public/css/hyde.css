@@ -80,11 +80,12 @@ html {
   color: #fff;
   margin-top: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 3.25rem;
+  font-size: 2.75rem;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
+  font-size: 0.95rem;
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
@@ -135,6 +136,7 @@ a.icon-item:focus {
 .content {
   padding-top:    4rem;
   padding-bottom: 4rem;
+  height: 100%;
 }
 
 @media (min-width: 48em) {
