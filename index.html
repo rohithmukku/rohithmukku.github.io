@@ -12,8 +12,32 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}
-        <a>{{ post.tag }}</a>
+    <span class="post-date">
+        <!--<a>{{ post.tag }}</a>-->
+        <p>
+            <small>
+            {{ post.date | date_to_string }} | tags:
+            <span class="blog_post_categories">
+                {% for tag in post.tags %}
+                    {% if forloop.last %}
+                        <a href="/tags/#{{ tag }}">{{ tag }}</a>
+                    {% else %}
+                        <a href="/tags/#{{ tag }}">{{ tag }}</a>,
+                    {% endif %}
+                {% endfor %}
+            </span>
+            | categories:
+            <span class="blog_post_categories">
+                {% for category in post.categories %}
+                    {% if forloop.last %}
+                        <a href="/categories/#{{ category }}">{{ category }}</a>
+                    {% else %}
+                        <a href="/categories/#{{ category }}">{{ category }}</a>,
+                    {% endif %}
+                {% endfor %}
+            </span>
+            </small>
+        </p>
     </span>
     <p>{{ post.description }}</p>
 

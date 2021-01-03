@@ -3,7 +3,8 @@ markdown: kramdown
 highlighter: pygments
 
 # Permalinks
-permalink: pretty
+#permalink: pretty
+permalink: /blog/:title/
 
 # Setup
 title: Rohith Mukku
