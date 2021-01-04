@@ -295,6 +295,30 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
 }
 
+.image-column {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.image-row::after {
+  box-sizing: border-box;
+  content: "";
+  clear: both;
+  display: table;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: small;
+}
 
 /*
  * Masthead
