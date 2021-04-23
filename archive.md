@@ -22,17 +22,30 @@ title: Archive
 </div>
 
 <div id="Tags" class="tab_content">
-  <h3>Tags</h3>
-  {% assign total_tags = 0 %}
-  {% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  {% assign total_tags = total_tags | plus: 1 %}
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% assign tags_list = "" | split: ',' %}
+  {% for post in site.posts %}
+    {% for tag in post.tags %}
+    {% assign tags_list = tags_list | push: tag %}
     {% endfor %}
-  </ul>
   {% endfor %}
+  {% assign unique_tags = tags_list | uniq %}
+  <h3>Tags</h3>
+  <ul>
+    {% assign total_tags = 0 %}
+    {% for tag in unique_tags %}
+    <li>{{ tag }}</li>
+    {% assign total_tags = total_tags | plus: 1 %}
+    <ul>
+      {% for post in site.posts %}
+      {% for post_tag in post.tags %}
+      {% if post_tag == tag %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </ul>
+  {% endfor %}
+  </ul>
   <p>Total number of tags: {{ total_tags }}</p>
 </div>
 

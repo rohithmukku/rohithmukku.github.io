@@ -11,7 +11,7 @@ title: Rohith Mukku
 tagline: 'Developer'
 description: 'A computer science enthusiast seeking expertise and greater knowledge in his areas of interest.<br>Made using <a href="https://jekyllthemes.io/theme/hyde" target="_blank">Hyde Jekyll Theme</a>.'
 url: http://rohithmukku.github.io
-baseurl:
+baseurl: 
 
 author:
   name: 'Rohith Mukku'
