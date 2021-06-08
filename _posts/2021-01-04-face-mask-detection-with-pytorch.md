@@ -39,6 +39,9 @@ trained on 30 epochs. Test accuracy was around 98%. For face detection I used Op
   </figcaption>
 </figure>
 
+<!--<iframe width="640" height="480" src="/assets/face_mask_detection/filename.avi" frameborder="0" allowfullscreen></iframe>-->
+![Demo](/assets/face_mask_detection/demo.gif)
+
 ### Improvements/Future Work
 - The model can be trained further on more data, also the model architecture can be more complex.
 - Use Streamlit for interactive experience.
