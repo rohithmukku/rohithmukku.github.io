@@ -28,6 +28,7 @@ github:
 plugins:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-redirect-from
 
 collections:
   tags:
